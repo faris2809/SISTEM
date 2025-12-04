@@ -51,12 +51,34 @@ if (mysqli_num_rows($display) > 0) {
         <label>Harga Barang</label> <br>
         <input type="text" name="harga"  value="<?php echo $hg ?>">> <br>
         <label>Catatan</label> <br>
-        <textarea name="catatan"  value="<?php echo $ct ?>"></textarea> <br>
+        <textarea name="catatan"><?php echo $ct ?></textarea> <br>
         <button type="submit" name="hantar">Hantar</button>
         </fieldset>
     </form>
 </center>
 </div>
-
     </body>
 </html>
+<?php
+
+if(isset($_POST['hantar'])) {
+     $id = $_POST['idbarang'];
+     $nb = $_POST['namabarang'];
+     $bs = $_POST['bilstok'];
+     $jb = $_POST['jenisbarang'];
+     $hg = $_POST['harga'];
+     $ct = $_POST['catatan'];
+
+     $query = mysqli_query($conn, "UPDATE kedai_runcit SET
+     idbarang = '".$id."',
+     namabarang = '".$nb."',
+     bilstok = '".$bs."',
+     jenisbarang = '".$jb."',
+     harga = '".$hg."',
+     catatan = '".$ct."'
+     WHERE idbarang = '".$id_."' ");
+
+     header("location:index.php");
+}
+
+?>
