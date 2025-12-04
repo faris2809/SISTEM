@@ -43,13 +43,13 @@ if (mysqli_num_rows($display) > 0) {
         <label>ID Barang</label> <br>
         <input type="text" name="idbarang" value="<?php echo $id ?>"> <br>
         <label>Nama Barang</label> <br>
-        <input type="text" name="namabarang"  value="<?php echo $nb ?>">> <br>
+        <input type="text" name="namabarang"  value="<?php echo $nb ?>"> <br>
         <label>Bilangan Stok</label> <br>
-        <input type="text" name="bilstok"  value="<?php echo $bs ?>">> <br>
+        <input type="text" name="bilstok"  value="<?php echo $bs ?>"> <br>
         <label>Jenis Barang</label> <br>
-        <input type="text" name="jenisbarang"  value="<?php echo $jb ?>">> <br>
+        <input type="text" name="jenisbarang"  value="<?php echo $jb ?>"> <br>
         <label>Harga Barang</label> <br>
-        <input type="text" name="harga"  value="<?php echo $hg ?>">> <br>
+        <input type="text" name="harga"  value="<?php echo $hg ?>"> <br>
         <label>Catatan</label> <br>
         <textarea name="catatan"><?php echo $ct ?></textarea> <br>
         <button type="submit" name="hantar">Hantar</button>
@@ -80,5 +80,6 @@ if(isset($_POST['hantar'])) {
 
      header("location:index.php");
 }
+
 
 ?>
