@@ -48,8 +48,8 @@
             <td>
             ".$row['catatan']."
             </td> ";
-            echo "<td> <a href='update.php?id=".$row['idbarang']."'>Kemaskini Rekod</a></td>";
-            echo "<td> <a href='delete.php?id=".$row['idbarang']."'>Padam Rekod</a></td>";
+            echo "<td> <a href='update.php?idbarang=".$row['idbarang']."'>Kemaskini Rekod</a></td>";
+            echo "<td> <a href='delete.php?idbarang=".$row['idbarang']."'>Padam Rekod</a></td>";
             echo "</tr>";
             
             
@@ -58,4 +58,5 @@
 
         </table>
     </body>
+
 </html>
