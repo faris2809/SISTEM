@@ -7,4 +7,5 @@ TUGASAN PHP
 4. Memastikan pengguna dapat padam rekod
 5. Memastikan rekod dapat dicetak
 Due date: next week
-   
+
+Developer: Faris & Alieya
