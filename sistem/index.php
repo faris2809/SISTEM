@@ -50,8 +50,8 @@
             <td>
             ".$row['catatan']."
             </td> ";
-            echo "<td> <a href='update.php?idbarang=".$row['idbarang']."'>Kemaskini Rekod</a></td>";
-            echo "<td> <a href='delete.php?idbarang=".$row['idbarang']."'>Padam Rekod</a></td>";
+            echo "<td> <a href='update.php?idbarang=".$row['idbarang']."'>Kemaskini</a></td>";
+            echo "<td> <a href='delete.php?idbarang=".$row['idbarang']."'>Padam</a></td>";
             echo "</tr>";
             
             

@@ -1,15 +1,29 @@
 <?php
 include('config.php');
 
-if (isset($_GET['id'])) {
+if (isset($_GET['idbarang'])) {
 
-    $id = $_GET['id'];
+    $id = $_GET['idbarang'];
     $id_ = $id;
 
 } else {
 
     echo "No data available";
     $id = "";
+}
+
+$display = mysqli_query($conn, "SELECT * FROM kedai_runcit WHERE idbarang= '".$id."' ");
+
+if (mysqli_num_rows($display) > 0) {
+    while($row = mysqli_fetch_assoc($display)) {
+
+        $id = $row['idbarang'];
+        $nb = $row['namabarang'];
+        $bs = $row['bilstok'];
+        $jb = $row['jenisbarang'];
+        $hg = $row['harga'];
+        $ct = $row['catatan'];
+    }
 }
 
 ?>
@@ -20,4 +34,29 @@ if (isset($_GET['id'])) {
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="logo.png">
     </head>
+    <body>
+        <h1 align="center">KEMASKINI MAKLUMAT</h1>
+          <div class = "form1">
+        <center> <!--  css untuk form1 iaitu .form1 {} -->
+    <form action ="" method = "post">
+        <fieldset>
+        <label>ID Barang</label> <br>
+        <input type="text" name="idbarang" value="<?php echo $id ?>"> <br>
+        <label>Nama Barang</label> <br>
+        <input type="text" name="namabarang"  value="<?php echo $nb ?>">> <br>
+        <label>Bilangan Stok</label> <br>
+        <input type="text" name="bilstok"  value="<?php echo $bs ?>">> <br>
+        <label>Jenis Barang</label> <br>
+        <input type="text" name="jenisbarang"  value="<?php echo $jb ?>">> <br>
+        <label>Harga Barang</label> <br>
+        <input type="text" name="harga"  value="<?php echo $hg ?>">> <br>
+        <label>Catatan</label> <br>
+        <textarea name="catatan"  value="<?php echo $ct ?>"></textarea> <br>
+        <button type="submit" name="hantar">Hantar</button>
+        </fieldset>
+    </form>
+</center>
+</div>
+
+    </body>
 </html>
