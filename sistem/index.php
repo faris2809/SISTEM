@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Kedai Runcit Fayae</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png">
     </head>
     <body>
         <h1 align="center">Rekod Inventori Kedai Runcit Fayae</h1>
@@ -19,7 +21,7 @@
 		<th>JENIS BARANG</th>
 		<th>HARGA</th>
         <th>CATATAN</th>
-        <th colspan="2">TINDAKAN</th>
+        <th colspan="3">TINDAKAN</th>
 		
 		</tr>
         <?php
@@ -57,6 +59,10 @@
         ?>
 
         </table>
+            <br>
+            <br>
+            <center>
+    <!--    <button onclick="window.print()">Print Rekod</button> -->
+           </center>
     </body>
-
 </html>
