@@ -1,0 +1,151 @@
+/*index punya css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #f8f3ff;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b2f78;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style: none;
+    background: #b8a3d1;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #ffe6ff;
+    text-shadow: 0 0 5px white;
+}
+
+table {
+    margin: auto;
+    width: 75%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d4c4e8;
+    font-size: 16px;
+}
+
+th {
+    background: #6d4ca5;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background: #f4edff;
+}
+
+tr:hover {
+    background: #ded8ec;
+}
+
+td a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #6d4ca5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+td a:hover {
+    background: #6d4ca5;
+    color: white;
+    border-color: #6d4ca5;
+    box-shadow: 0 2px 6px rgba(109, 76, 165, 0.4);
+}
+button {
+    padding: 12px 22px;
+    background: #b8a3d1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #6d4ca5;
+}
+
+/*kemaskini css*/
+.form1 {
+    width: 45%;                         
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e6d9fa;
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccb7f5;
+    border-radius: 8px;
+    background: #faf7ff;
+    font-size: 13px;
+}
+
+form button {
+    padding: 10px 25px;
+    background: #7b5dbb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin: 10px auto 0;
+}
+
+form button:hover {
+    background: #5b4291;
+    box-shadow: 0px 3px 8px rgba(90, 65, 145, 0.3);
+    transform: translateY(-2px);
+}
