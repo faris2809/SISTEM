@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Kedai Runcit Fayae</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Style.css">
         <link rel="icon" href="logo.png">
     </head>
     <body>
@@ -13,13 +13,13 @@
             <li><a href="dashboard.php">Dashboard</a></li>
         
         </ul>
-        <table border=1 cellpadding = 5 cellspacing = 0 bgcolor=whitesmoke align=center>
+        <table border=1 cellpadding = 5 cellspacing = 0 align=center>
         <tr>
 		<th>ID BARANG</th>
 		<th>NAMA BARANG</th>
 		<th>BILANGAN STOK</th>
 		<th>JENIS BARANG</th>
-		<th>HARGA</th>
+		<th>HARGA BARANG</th>
         <th>CATATAN</th>
         <th colspan="3">TINDAKAN</th>
 		
@@ -45,8 +45,7 @@
             ".$row['jenisbarang']."
             </td>
             ";
-            echo "<td> RM ".number_format($row['harga'],2)."
-            </td>
+            echo "<td> RM ".number_format($row['harga'],2)."</td>
             <td>
             ".$row['catatan']."
             </td> ";
@@ -62,7 +61,8 @@
             <br>
             <br>
             <center>
-    <!--    <button onclick="window.print()">Print Rekod</button> -->
+        <a href="generate.php"><button>Generate Report</button></a>
+
            </center>
     </body>
 </html>
