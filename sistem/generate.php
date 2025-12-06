@@ -1,14 +1,17 @@
 <?php
 include("config.php");
 
-// Variable tarikh
+
+// Set timezone first
+date_default_timezone_set('Asia/Kuala_Lumpur');
+
+// Then get date and time
 $date = date("d/m/Y"); 
-$time = date("H:i:s");
-$zone = date_default_timezone_set('Asia/Kuala_Lumpur');
-
-
+$time = date("g:i A"); 
+$year = date("Y"); 
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +20,45 @@ $zone = date_default_timezone_set('Asia/Kuala_Lumpur');
     <style>
 @media print {
     .no-print { display: none !important; }
+     footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-content {
+    flex: 1; /* take remaining space */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+
 </style>
 
 </head>
 <body>
-    <h1 align="center">Laporan Semasa Inventori Kedai Runcit Fayae</h1>
-    <h2 align="center">Tarikh: <?php echo $date ?> | Masa: <?php echo $time ?> </h2>
+   <h1 style="text-align:center; margin-bottom:5px;">Laporan Semasa Inventori Kedai Runcit Fayae</h1>
+<h2 style="text-align:center; margin-top:0; margin-bottom:20px;">
+    Tarikh: <?php echo $date ?> | Masa: <?php echo $time ?>
+</h2>
+
     <br>
     <table border=1 cellpadding = 5 cellspacing = 0 align=center>
         <tr>
@@ -77,6 +112,10 @@ $zone = date_default_timezone_set('Asia/Kuala_Lumpur');
 
     <br>
    <center>  <button class="no-print" onclick="window.print()">Print Rekod</button>
+   <br>
+   <footer>
+    <font> Kedai Runcit Fayae &copy; <?php echo $year ?></font>
+   </footer>
  </center>
 
 

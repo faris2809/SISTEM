@@ -18,7 +18,19 @@
         <label>Bilangan Stok</label> <br>
         <input type="text" name="bilstok" required> <br>
         <label>Jenis Barang</label> <br>
-        <input type="text" name="jenisbarang" required> <br>
+        <select type="text" name="jenisbarang" required>
+         <option value="">--- Pilih Kategori ---</option>
+         <option value="Makanan">Makanan</option>
+          <option value="Minuman">Minuman</option>
+           <option value="Bahan Mentah/Dapur">Bahan Mentah/Dapur</option>
+            <option value="Bahan Basah/Segar">Bahan Basah/Segar</option>
+             <option value="Barangan Kebersihan">Bahan Mentah/Dapur</option>
+             <option value="Barangan Kesihatan">Barangan Kesihatan</option>
+              <option value="Produk Kebersihan">Produk Kebersihan</option>
+             <option value="Barangan Lain">Barangan Lain</option>
+           
+        </select> <br>
+       <br>
         <label>Harga Barang</label> <br>
         <input type="text" name="harga" required> <br>
         <label>Catatan</label> <br>

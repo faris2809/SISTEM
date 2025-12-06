@@ -47,7 +47,18 @@ if (mysqli_num_rows($display) > 0) {
         <label>Bilangan Stok</label> <br>
         <input type="text" name="bilstok"  value="<?php echo $bs ?>"> <br>
         <label>Jenis Barang</label> <br>
-        <input type="text" name="jenisbarang"  value="<?php echo $jb ?>"> <br>
+          <select type="text" name="jenisbarang" required>
+        <option value="<?php echo $jb ?>"><?php echo $jb ?></option>
+         <option value="Makanan">Makanan</option>
+          <option value="Minuman">Minuman</option>
+           <option value="Bahan Mentah/Dapur">Bahan Mentah/Dapur</option>
+            <option value="Bahan Basah/Segar">Bahan Basah/Segar</option>
+             <option value="Barangan Kebersihan">Bahan Mentah/Dapur</option>
+             <option value="Barangan Kesihatan">Barangan Kesihatan</option>
+              <option value="Produk Kebersihan">Produk Kebersihan</option>
+             <option value="Barangan Lain">Barangan Lain</option>
+           
+        </select> <br>
         <label>Harga Barang</label> <br>
         <input type="text" name="harga"  value="<?php echo $hg ?>"> <br>
         <label>Catatan</label> <br>
