@@ -66,6 +66,8 @@ if (mysqli_num_rows($display) > 0) {
         <button type="submit" name="hantar">Hantar</button>
         </fieldset>
     </form>
+    <br>
+    <a href="index.php"><button>Kembali Ke Halaman Utama</button></a>
 </center>
 </div>
     </body>
