@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2025 at 04:22 AM
+-- Generation Time: Dec 10, 2025 at 08:41 AM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,12 @@ CREATE TABLE `kedai_runcit` (
 --
 
 INSERT INTO `kedai_runcit` (`idbarang`, `namabarang`, `bilstok`, `jenisbarang`, `harga`, `catatan`) VALUES
-('F001', 'UBAT GIGI COLGATE', 200, 'BARANG MANDIAN', 7.8, 'STOK BARU');
+('A004', 'Beras Cap Rambutan', 48, 'Bahan Mentah/Dapur', 32.55, 'Import dari Thailand'),
+('A078', 'Tepung Gandum', 55, 'Bahan Mentah/Dapur', 6.7, 'Stok lama'),
+('A110', 'Sos Cili Life', 77, 'Bahan Mentah/Dapur', 8.8, 'Stok baharu'),
+('F001', 'Ubat Gigi Colgate', 200, 'Produk Kebersihan', 6.7, 'Stok lama'),
+('F300', 'Roti Ban Kelapa', 32, 'Makanan', 6, 'Tarikh luput dalam dua minggu\r\n'),
+('F444', 'Air Tin Coke', 24, 'Minuman', 2.5, 'Tiada');
 
 --
 -- Indexes for dumped tables
